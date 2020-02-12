@@ -14,22 +14,22 @@ class Car
         $this->numberPlate = $numberPlate;
     }
 
-    public function getNumberPlate()
+    public function getNumberPlate() : string
     {
         return $this->numberPlate;
     }
 
-    public function getMake()
+    public function getMake() : string
     {
         return $this->make;
     }
 
-    public function getMileage()
+    public function getMileage() : int
     {
         return $this->mileage;
     }
 
-    public function addJourney(int $journey)
+    public function addJourney(int $journey) : Car
     {
         $this->mileage += $journey;
         return $this;
